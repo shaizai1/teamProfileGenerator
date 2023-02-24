@@ -9,7 +9,23 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
+const { start } = require("repl");
 
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
+//array containing answers from inquirer
+let team = [];
+startProgram()
+async function startProgram(){
 
+
+//adds new engineer to team array
+team.push(new Engineer("name",1,"test@test.com"))
+
+
+
+
+
+//end of questions
+let htmlDoc = render(team)
+}
