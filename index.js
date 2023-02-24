@@ -22,10 +22,14 @@ async function startProgram(){
 //adds new engineer to team array
 team.push(new Engineer("name",1,"test@test.com"))
 
-
+//inquirer questions
 
 
 
 //end of questions
 let htmlDoc = render(team)
+
+await fs.writeFile(outputPath,htmlDoc)
+
+
 }
