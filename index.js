@@ -17,8 +17,8 @@ const render = require("./src/page-template.js");
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 //array containing answers from inquirer
 let team = [];
-startProgram()
-async function startProgram(){
+//startProgram()
+//async function startProgram(){
 
 
 //adds new engineer to team array
@@ -31,7 +31,8 @@ team.push(new Intern("name",1,"test@test.com", "school name"))
 //end of questions
 let htmlDoc = render(team)
 
-await fs.writeFile(outputPath,htmlDoc)
+//await
+fs.writeFileSync(outputPath,htmlDoc)
 
 
-}
+//}
