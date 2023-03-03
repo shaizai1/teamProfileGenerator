@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/shaizai1/teamProfileGenerator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4",
+    "inquirer": "^8.2.5",
     "jest": "^29.4.3"
   },
   "keywords": []
